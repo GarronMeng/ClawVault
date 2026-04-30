@@ -379,11 +379,13 @@ Garron 的底色不是空想家，也不是犬儒者。态度可以犀利，但�
 | 人生主题框架 | 世界观透镜/选题方向 | `references/worldview-framework.md`（同步至 Obsidian `ClawVault/人生主题框架.md`） |
 | 采访风格参考 | 专访写作模板 | `references/interview-style.md`（来源：专访陈宽语 PDF） |
 | 加密通讯范本 | 迭代优化案例·能量一致性 | `references/sample-07-jiami-tongxun.md` |
-| 加密通讯（迭代范例） | 开头/结尾迭代过程 + 能量匹配 | `references/writing-sample-encrypted-comm.md` |
+| 采访风格参考 | 专访写作模板 | `references/interview-style.md`（来源：专访陈宽语 PDF） |
 
 使用素材时：引用观点要注明来源，自己的笔记标注「整理自 Garron 笔记」。
 
 > **维护原则：** 文风基准以 Obsidian 中的 5 篇为准，`references/writing-samples.md` 作为快照备份。个人小传以 Obsidian 版本为准。两者不同步时，以 Obsidian 版本为准。
+>
+> **选题池：** 存放在 Obsidian `ClawVault/选题池.md`，用 `garron-topic-engine` skill 管理。
 
 ---
 
@@ -463,14 +465,15 @@ hermes chat -q "读取 /path/to/article.md 内容，用 send_message 工具发�
 ## 十五、完整写作工作流
 
 ```
-1. 读取本 SKILL.md（自动）
-2. 判断文章类型（思辨随笔/行业观察/公益实践/朋友圈随笔）
-3. 读取文风基准文章（从 Obsidian ClawVault/当AI学会替你动手/）
-4. 从 flomo 笔记库检索相关素材
-5. 确定内容内核（一句话概括）
-6. 写初稿（严格遵守风格准则）
-7. 四层自检（L1-L4）
-8. 去 AI 味（加载 garron-de-ai-writer skill）
-9. 交稿 → 收集反馈 → 迭代修改（最多 3 轮）
+ 0. 选题（加载 garron-topic-engine，如有需要）
+ 1. 读取本 SKILL.md（自动）
+ 2. 判断文章类型（思辨随笔/行业观察/公益实践/朋友圈随笔/采访）
+ 3. 读取文风基准文章（从 Obsidian ClawVault/当AI学会替你动手/）
+ 4. 从 flomo 笔记库检索相关素材
+ 5. 确定内容内核（一句话概括）
+ 6. 写初稿（严格遵守风格准则）
+ 7. 四层自检（L1-L4）
+ 8. 去 AI 味（加载 garron-de-ai-writer skill）
+ 9. 交稿 → 收集反馈 → 迭代修改（最多 3 轮）
 10. 存档至 Obsidian（frontmatter + tags）→ git push
 ```
