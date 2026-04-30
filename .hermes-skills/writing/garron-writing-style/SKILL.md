@@ -477,3 +477,18 @@ hermes chat -q "读取 /path/to/article.md 内容，用 send_message 工具发�
  9. 交稿 → 收集反馈 → 迭代修改（最多 3 轮）
 10. 存档至 Obsidian（frontmatter + tags）→ git push
 ```
+
+### 模型选择
+
+写作任务使用 **writing profile**（Claude Opus 4）：
+```bash
+writing chat                    # 交互式写作
+writing chat -q "写一篇关于XX的文章"  # 单次写作
+```
+
+其他日常工作使用默认 profile（mimo-v2.5-pro）：
+```bash
+hermes chat                     # 默认交互
+```
+
+**规则：** 写文章、润色、风格分析 → 用 writing profile。日常对话、技术问题、工具操作 → 用默认 profile。
