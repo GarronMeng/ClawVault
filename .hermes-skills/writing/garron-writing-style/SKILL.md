@@ -151,6 +151,19 @@ Garron 的底色不是空想家，也不是犬儒者。态度可以犀利，但�
 - 螺旋上升而非线性推进：每一段都回到「我」，但每一圈都更深一层
 - 最后一段必须从内省转向外部（读者/世界），否则会显得自恋
 
+### 采访/专访（如「顺势而为，对错在心」）
+```
+热点/争议引入（制造悬念）
+  → 当事人回应（直接引语展现态度）
+    → 背景回溯（非典型成长史）
+      → 挑战与低谷（批评、自我怀疑）
+        → 细节呈现（有画面感的具体场景）
+          → 第三方评价（多视角印证）
+            → 结尾升华（当事人哲学，回扣标题）
+```
+节奏特点：引语驱动，第三人称叙事。核心论点通过当事人和第三方的直接引语呈现，作者是隐形的观察者。适合人物专访、行业人物特写。
+**关键技巧：** 反差标题、细节画面感、多方印证、结尾回扣标题。详见 `references/interview-style.md`。
+
 ### 选择指南
 - 如果核心是「一个想法」→ 思辨随笔
 - 如果核心是「一个事件」→ 行业观察
@@ -364,6 +377,7 @@ Garron 的底色不是空想家，也不是犬儒者。态度可以犀利，但�
 | 「当AI学会替你动手」5篇 | **文风基准（主参考）** | `ClawVault/当AI学会替你动手/01~05`（Obsidian） |
 | 个人小传 | 经历素材/身份参照 | `references/personal-profile.md`（同步至 Obsidian `ClawVault/个人小传.md`） |
 | 人生主题框架 | 世界观透镜/选题方向 | `references/worldview-framework.md`（同步至 Obsidian `ClawVault/人生主题框架.md`） |
+| 采访风格参考 | 专访写作模板 | `references/interview-style.md`（来源：专访陈宽语 PDF） |
 | 加密通讯范本 | 迭代优化案例·能量一致性 | `references/sample-07-jiami-tongxun.md` |
 | 加密通讯（迭代范例） | 开头/结尾迭代过程 + 能量匹配 | `references/writing-sample-encrypted-comm.md` |
 
@@ -450,12 +464,13 @@ hermes chat -q "读取 /path/to/article.md 内容，用 send_message 工具发�
 
 ```
 1. 读取本 SKILL.md（自动）
-2. 判断文章类型（思辨随笔/行业观察/公益实践/短评）
+2. 判断文章类型（思辨随笔/行业观察/公益实践/朋友圈随笔）
 3. 读取文风基准文章（从 Obsidian ClawVault/当AI学会替你动手/）
 4. 从 flomo 笔记库检索相关素材
 5. 确定内容内核（一句话概括）
 6. 写初稿（严格遵守风格准则）
 7. 四层自检（L1-L4）
-8. 交稿 → 收集反馈 → 迭代修改（最多 3 轮）
-9. 存档至 Obsidian（frontmatter + tags）
+8. 去 AI 味（加载 garron-de-ai-writer skill）
+9. 交稿 → 收集反馈 → 迭代修改（最多 3 轮）
+10. 存档至 Obsidian（frontmatter + tags）→ git push
 ```
