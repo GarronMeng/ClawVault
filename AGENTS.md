@@ -7,8 +7,8 @@
 ## 1. 总原则
 
 1. **先找已有方法论，再新增内容。**
-   - 写作相关规则优先查看 `.hermes-skills/writing/`。
-   - 不要在未检索现有 skill 的情况下新建平行规则。
+   - 写作相关规则优先查看 `.hermes-skills/writing/` 与 `Resources/` 下的写作资产库。
+   - 不要在未检索现有 skill / 样本库 / anti-pattern 的情况下新建平行规则。
 
 2. **先判断任务阶段，再调用对应能力。**
    - 没有主题：用 `garron-topic-engine`。
@@ -38,24 +38,49 @@
       → 自检
         → 存档
           → 复盘
-            → 更新方法论
+            → 更新方法论 / 样本库 / anti-pattern
 ```
 
 对应入口：
 
 | 场景 | 优先文件 |
 |---|---|
-| 不知道写什么 | `.hermes-skills/writing/garron-topic-engine/SKILL.md` |
+| 不知道写什么 | `.hermes-skills/writing/garron-topic-engine/SKILL.md`、`选题池.md` |
 | 想写但没想透 | `.hermes-skills/writing/garron-insights-deepdive/SKILL.md` |
-| 正式写文章 | `.hermes-skills/writing/garron-writing-style/SKILL.md` |
-| 改写 / 去 AI 味 | `.hermes-skills/writing/garron-de-ai-writer/SKILL.md` |
-| 文章模板 | `Templates/Article.md` |
+| 正式写文章 | `.hermes-skills/writing/garron-writing-style/SKILL.md`、`Templates/Article.md` |
+| 改写 / 去 AI 味 | `.hermes-skills/writing/garron-de-ai-writer/SKILL.md`、`Resources/禁用表达清单.md` |
+| 朋友圈 / 旅行 / 日常观察 | `Resources/life-flow-samples.md`、`Resources/style-calibration.md`、`Resources/anti-patterns.md` |
+| 开头 / 结尾校准 | `Resources/开头结尾样本库.md` |
+| 风格样本调用 | `Resources/风格样本库.md` |
 | 发布后复盘 | `Templates/Writing Review.md` |
 | 系统总览 | `Resources/写作系统索引.md` |
 
 ---
 
-## 3. 文件修改原则
+## 3. 朋友圈 / 生活流任务特别规则
+
+当任务是朋友圈、旅行记录、日常观察、关系记录、城市感受、公益活动后的短文时，不要默认调用“思辨随笔模式”。
+
+必须优先读取：
+
+1. `Resources/life-flow-samples.md`
+2. `Resources/style-calibration.md`
+3. `Resources/anti-patterns.md`
+4. `Resources/禁用表达清单.md`
+
+默认原则：
+
+- 先现场，后观点；
+- 允许长呼吸段落；
+- 不要一句一段；
+- 用并置替代解释；
+- 判断后置；
+- 行动表达要克制；
+- 结尾允许轻，不要强行升华。
+
+---
+
+## 4. 文件修改原则
 
 ### 可以做
 
@@ -63,6 +88,7 @@
 - 优化 README，让入口更清楚；
 - 把散落的方法论整理成链路；
 - 给 Daily / Weekly 模板增加反馈入口；
+- 把真实文章和真实朋友圈蒸馏成样本资产；
 - 在不改变原意的前提下提升可执行性。
 
 ### 谨慎做
@@ -77,12 +103,13 @@
 - 把 Garron 的表达磨成通用公众号腔；
 - 用宏大抽象替代具体经验；
 - 用“综上所述 / 毋庸置疑 / 值得注意的是”等 AI 腔；
+- 用一句一段、强行留白制造“作家感”；
 - 在没有上下文时假装理解作者经历；
 - 为了整洁牺牲真实的复杂性。
 
 ---
 
-## 4. 默认输出风格
+## 5. 默认输出风格
 
 Agent 给 Garron 输出时，优先使用：
 
@@ -96,11 +123,11 @@ Agent 给 Garron 输出时，优先使用：
 - 最小可运行闭环；
 - 后续迭代路线。
 
-但写文章本身时，不要把这些结构生硬塞进正文。文章应遵守 `garron-writing-style`。
+但写文章本身时，不要把这些结构生硬塞进正文。文章应遵守对应场景下的样本库和风格校准文件。
 
 ---
 
-## 5. 最小下一步原则
+## 6. 最小下一步原则
 
 当信息不足时，不要卡住。
 
@@ -113,15 +140,21 @@ Agent 给 Garron 输出时，优先使用：
 
 ---
 
-## 6. 推荐阅读顺序
+## 7. 推荐阅读顺序
 
 新 Agent 进入仓库后，按这个顺序读取：
 
 1. `README.md`
 2. `Resources/写作系统索引.md`
-3. `.hermes-skills/writing/garron-topic-engine/SKILL.md`
-4. `.hermes-skills/writing/garron-insights-deepdive/SKILL.md`
-5. `.hermes-skills/writing/garron-writing-style/SKILL.md`
-6. `.hermes-skills/writing/garron-de-ai-writer/SKILL.md`
-7. `Templates/Article.md`
-8. `Templates/Writing Review.md`
+3. `Resources/style-calibration.md`
+4. `Resources/anti-patterns.md`
+5. `Resources/life-flow-samples.md`
+6. `Resources/风格样本库.md`
+7. `Resources/开头结尾样本库.md`
+8. `Resources/禁用表达清单.md`
+9. `.hermes-skills/writing/garron-topic-engine/SKILL.md`
+10. `.hermes-skills/writing/garron-insights-deepdive/SKILL.md`
+11. `.hermes-skills/writing/garron-writing-style/SKILL.md`
+12. `.hermes-skills/writing/garron-de-ai-writer/SKILL.md`
+13. `Templates/Article.md`
+14. `Templates/Writing Review.md`
